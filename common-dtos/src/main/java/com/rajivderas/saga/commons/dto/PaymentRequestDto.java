@@ -1,6 +1,5 @@
 package com.rajivderas.saga.commons.dto;
 
-import com.rajivderas.saga.commons.event.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,12 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderResponseDto {
+public class PaymentRequestDto {
 
-    private Integer userId;
-    private Integer productId;
-    private Integer amount;
     private Integer orderId;
-    private OrderStatus orderStatus;
+    private Integer userId;
+    private Integer amount;
 
 }
